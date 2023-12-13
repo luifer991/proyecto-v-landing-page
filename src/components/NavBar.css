@@ -1,0 +1,44 @@
+.nav-bar{
+    position: sticky;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    animation: nav linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 300px;
+    background-color: var(--nav-bar-color);
+}
+
+.nav-bar img {
+    height: 50px;
+    width: auto;
+    padding: 1em;
+    animation: img-change ease-in-out both;
+    animation-timeline: scroll(root);
+    animation-range: 0 400px;
+}
+
+@keyframes img-change {
+    from{
+        height: 50px;
+        width: auto;
+    }    
+
+    to{
+        height: 30px;
+        width: auto;
+    }
+}
+
+@keyframes nav {
+    to{
+        background: #2828e5;
+        opacity: .6;
+        backdrop-filter: blur(5px);
+        height: 60px;
+        width: auto;
+    }
+}
