@@ -17,6 +17,7 @@
   --toggle-bg: #f0eb9d;
   --toggle-fg: #ffd000;
   --nav-bar-color: #000000;
+  --grid-backgorund: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"]{
@@ -25,6 +26,7 @@
   --toggle-bg: #001d3d;
   --toggle-fg: #2828e5;
   --nav-bar-color: #d6a400;
+  --grid-backgorund: rgba(255, 255, 255, 0.15);
 }
 
 a {
